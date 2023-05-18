@@ -92,7 +92,34 @@ const Form: FC = (): JSX.Element => {
         onBlur={blurHandler}
         onChange={labelHandler}
       />
-      <input type="checkbox" />
+
+      <S.LabelCheckBox>
+        <S.Checkbox type="checkbox" />
+        <S.TextLabel>Remember me</S.TextLabel>
+      </S.LabelCheckBox>
+      <S.Switch>
+        <S.Selector />
+      </S.Switch>
+      <label>
+        <S.RadioButton type="radio" />
+        Radio selection 1
+      </label>
+      <label>
+        <S.RadioButton type="radio" />
+        Radio selection 2
+      </label>
+      <label>
+        <S.RadioButton type="radio" />
+        Radio selection 3
+      </label>
+      <span>Dropdown Title</span>
+      <select name="" id="">
+        <option value="Dropdown option">Dropdown option</option>
+        <option value="Dropdown option">Dropdown option</option>
+        <option value="Dropdown option">Dropdown option</option>
+      </select>
+      <button>Cancel</button>
+      <button>Next</button>
     </S.Container>
   )
 }

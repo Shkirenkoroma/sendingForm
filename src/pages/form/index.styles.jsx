@@ -29,3 +29,47 @@ font-size: 12px;
 line-height: 18px;
 color: #666666;
 `
+
+export const Checkbox = styled.input`
+width: 24px;
+height: 24px;
+background: #FFFFFF;
+border: 1px solid #CCCCCC;
+border-radius: 4px;
+`
+
+export const Switch = styled.span`
+position:relative;
+display:inline-block;
+width: 49px;
+height: 24px;
+background: #FFFFFF;
+border: 1px solid #CCCCCC;
+border-radius: 32px;
+`
+
+export const Selector = styled.span`
+position:absolute;
+width: 18px;
+height: 18px;
+background: #F4F4F4;
+border: 1px solid #CCCCCC;
+border-radius: 32px;
+`
+
+export const LabelCheckBox = styled.label`
+display:flex;
+align-items:center;
+
+`
+export const TextLabel = styled.span`
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+`
+
+export const RadioButton = styled.input`
+
+
+`
