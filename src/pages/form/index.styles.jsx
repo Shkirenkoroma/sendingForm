@@ -10,7 +10,6 @@ width:100%;
 max-width:564px;
 height:calc(100vh - 200px);
 margin:0 auto;
-border:1px solid red;
 `
 export const Input = styled.input`
 width: 564px;
@@ -22,6 +21,7 @@ border-radius: 8px;
 font-size: 16px;
 outline:none;
 `
+
 export const Label = styled.label`
 margin-bottom:8px;
 font-weight: 600;
@@ -35,7 +35,7 @@ width: 24px;
 height: 24px;
 background: #FFFFFF;
 border: 1px solid #CCCCCC;
-border-radius: 4px;
+border-radius: 14px;
 `
 
 export const Switch = styled.span`
@@ -46,10 +46,16 @@ height: 24px;
 background: #FFFFFF;
 border: 1px solid #CCCCCC;
 border-radius: 32px;
+&:hover{
+  cursor:pointer;
+}
 `
 
 export const Selector = styled.span`
 position:absolute;
+top:2px;
+left:3px;
+transform:(props=> props)translateX(10px);
 width: 18px;
 height: 18px;
 background: #F4F4F4;
@@ -71,5 +77,38 @@ font-size: 16px;
 
 export const RadioButton = styled.input`
 
+`
 
+export const TitleSelector = styled.span`
+
+
+`
+export const Select = styled.select`
+width: 564px;
+height: 56px;
+`
+
+export const Option = styled.option`
+width: 564px;
+height: 56px;
+`
+
+export const ButtonContainer = styled.div`
+display:flex;
+justify-content:space-between;
+`
+
+export const Button = styled.button`
+width: 172px;
+height: 56px;
+background: transparent;
+border:1px solid  #7A5CFA;
+border-radius: 8px;
+
+ &:hover{
+  cursor:pointer;
+  background-color: #7A5CFA;
+  color:#fff;
+  transition:all 500ms;
+}
 `
